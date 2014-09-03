@@ -1,0 +1,212 @@
+body {
+	background: #fff;
+	}
+
+#wrapper {
+	margin: 1em auto;
+	padding: 1em;
+	background: #e8e8e8;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	}    
+
+#opts {
+    	white-space: pre;
+    	font: 0.9em/1.5em Consolas, 'Courier New', Courier, monospace;
+    	color: #444;
+    	clear: left;
+    	}
+ 
+ fieldset.hide label, fieldset.hide input, fieldset.hide select, fieldset.hide br, fieldset.hide div {
+	display: none;
+	}
+
+ fieldset.show label, fieldset.show input, fieldset.show select, fieldset.show br {
+	display: inline;
+	}
+
+legend, button {
+	cursor: pointer;
+	background: #f9f9f9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+	}
+  
+#paletteChooser.show legend {
+	background: #222222;
+	text-shadow: none;
+	}
+    
+.hide legend, #paletteChooser.hide legend, button {
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 4px;
+	}
+
+#formOptions {
+    width: 300px;
+    float: right;
+/* 
+    margin-right: auto;
+    margin-left: auto;
+    border:1px solid #DDD;
+ */
+}
+
+fieldset {
+	border: none;
+	margin-bottom: 1em;
+    background: #f9f9f9;
+    padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+fieldset#paletteChooser {
+	background: #222222;
+	}
+
+#formOptions legend {
+    font: 0.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*     padding: 0px 0px 10px 40px;
+
+    margin: -10px -30px 30px -30px;
+ */
+    color: #000;
+    margin-top: 5px;
+}
+
+#formOptions label {
+    margin: 0px 0px 3px;
+/* 
+    width: 80px;
+ */
+    text-align: right;
+    padding-right: 3px;
+    margin-top: 0px;
+    color: #333;
+    font: 0.7em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+#formOptions p.small  {
+	font-size: 0.7em;
+	text-align: right;
+}
+
+#formOptions p.small label  {
+	color: #999;
+}
+
+#formOptions input[type="text"], #formOptions input.color, #formOptions input[type="email"], #formOptions textarea {
+    border: 1px solid #CCC;
+    color: #666;
+    height: 10px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding: 3px 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font: normal 0.65em/0.65em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#formOptions select {
+    border: 1px solid #CCC;
+    color: #666;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding: 3px 18px 5px 6px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font: normal 0.65em/0.65em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    appearance:none;
+    line-height: 0.9;
+    background: #fff url('/images/down-arrow.png') no-repeat 85%;
+    }
+/* 
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 22%;
+    outline: 0 none;
+    text-overflow: '';
+    width: 68%;
+    border-radius: 4px;
+
+    text-indent: 0.01px;
+    width: 22%;
+    font-size: 0.8em;
+    line-height: 0.5em;
+}
+
+ */
+#formOptions textarea{
+    height:100px;
+}
+
+#formOptions .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+
+#formOptions .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+
+#paletteChooser.show  legend {
+	color: #ccc;
+	}
+
+#paletteChooser input[type=radio] {
+	float: left;
+	margin-top: 14px;
+	margin-right: 5px;
+	}
+
+div.chip {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	text-shadow: 0px 0px 3px #000;
+	float: left;
+	margin: 2px;
+	border-radius: 5px;
+	border: 1px solid #666;
+	}
+
+ fieldset.hide, fieldset#paletteChooser.hide {
+     background: transparent;
+     margin-bottom: 0;
+     }
+
+ fieldset.show {
+     background: #f9f9f9;
+     }
+
+ fieldset#paletteChooser.show {
+     background: #222222;
+     }
+
