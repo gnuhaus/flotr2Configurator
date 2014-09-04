@@ -1,7 +1,5 @@
 <?
-// $count = count($colorData);
-// 
-// $selected = (!isset($selected) || is_null($selected) || $selected >= $count) ? 0 : $selected; 
+
 $palette = "palette = {
 	";
 for ($j=0;$j<$count;$j++) {

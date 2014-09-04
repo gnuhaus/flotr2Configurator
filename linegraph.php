@@ -13,10 +13,6 @@ $mouseTrack = true;
 
 $colorFeed = 'inc/colors.csv';
 
-// Arrays we'll use later
-$keys = array();
-$newArray = array();
-
 // Function to convert CSV into associative array
 function csvToArray($file, $delimiter) { 
   if (($handle = fopen($file, 'r')) !== FALSE) { 
@@ -513,7 +509,6 @@ xaxis : {
         title: xTitle,
         color: null,
         titleAngle: xTitleAngle
-//         ticks: [[0, ''], [1, 'Sun'], [2, 'Mon'], [3, 'Tue'], [4, 'Wed'], [5, 'Thu'], [6, 'Fri'], [7, 'Sat']]
       },
       yaxis : {
         showLabels: yShowLabels,

@@ -16,10 +16,6 @@ $lineFillOpacity = 1;
 
 $colorFeed = 'inc/colors.csv';
 
-// Arrays we'll use later
-$keys = array();
-$newArray = array();
-
 // Function to convert CSV into associative array
 function csvToArray($file, $delimiter) { 
   if (($handle = fopen($file, 'r')) !== FALSE) { 
@@ -450,7 +446,6 @@ for (var i=1;i<7;i++) {
 
 
 var markerFormatter = function(obj){
-// return obj.y.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 return ' '+(obj.y).toFixed(0) + '%';
 }
 

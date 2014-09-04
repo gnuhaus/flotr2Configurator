@@ -13,10 +13,6 @@ $mouseTrack = true;
 
 $colorFeed = 'inc/colors.csv';
 
-// Arrays we'll use later
-$keys = array();
-$newArray = array();
-
 // Function to convert CSV into associative array
 function csvToArray($file, $delimiter) { 
   if (($handle = fopen($file, 'r')) !== FALSE) { 
