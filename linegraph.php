@@ -41,12 +41,15 @@ $colorData = csvToArray($colorFeed, ',');
     <title>
       Configurator for Flotr2 Line Graph
     </title>
-
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/charts.css">
 
    </head>
-  <body>
+  <body id="linegraph">
 <div id="wrapper" style="width: 720px;">
+
+<? include 'inc/nav.inc'; ?>
+
     <div id="bargraph" style="width: 400px; height: 400px; background-color: #f9f9f9; float: left; border-radius: 8px;"></div>
 
 <form method="post" name="formOptions" id="formOptions" action="#">

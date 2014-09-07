@@ -26,7 +26,18 @@ body {
 	display: inline;
 	}
 
-legend, button {
+#wrapper ul:first-of-type {
+	margin: 0 0 1em;
+	padding: 0;
+	}
+
+#wrapper ul:first-of-type li {
+	display: inline-block;
+	margin: 0 1em 0 0;
+    font: 0.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+legend, button, #wrapper ul:first-of-type li {
 	cursor: pointer;
 	background: #f9f9f9;
     -webkit-border-radius: 5px;
@@ -40,7 +51,7 @@ legend, button {
 	text-shadow: none;
 	}
     
-.hide legend, #paletteChooser.hide legend, button {
+.hide legend, #paletteChooser.hide legend, button, #wrapper ul:first-of-type li {
 	background: #eee;
 	border: 1px solid #ccc;
 	padding: 4px;
