@@ -37,6 +37,11 @@ body {
     font: 0.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 
+#wrapper ul:first-of-type a {
+	text-decoration: none;
+	color: #229;
+	}
+
 legend, button, #wrapper ul:first-of-type li {
 	cursor: pointer;
 	background: #f9f9f9;
@@ -44,6 +49,10 @@ legend, button, #wrapper ul:first-of-type li {
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 5px;
+	}
+
+#linegraph .fa-line-chart, #barchart .fa-bar-chart, #piechart .fa-pie-chart, #area .fa-area-chart {
+	color: #008000;
 	}
   
 #paletteChooser.show legend {
