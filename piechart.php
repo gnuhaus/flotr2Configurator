@@ -46,7 +46,7 @@ $colorData = csvToArray($colorFeed, ',');
 <link rel="stylesheet" href="css/charts.css">
 
    </head>
-  <body id="pichart">
+  <body id="piechart">
 <div id="wrapper" style="width: 720px;">
 
 <? include 'inc/nav.inc'; ?>
