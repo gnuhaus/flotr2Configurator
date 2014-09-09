@@ -39,7 +39,7 @@ body {
 
 #wrapper ul:first-of-type a {
 	text-decoration: none;
-	color: #229;
+	color: #222;
 	}
 
 legend, button, #wrapper ul:first-of-type li {
@@ -51,7 +51,10 @@ legend, button, #wrapper ul:first-of-type li {
     padding: 5px;
 	}
 
-#linegraph .fa-line-chart, #barchart .fa-bar-chart, #piechart .fa-pie-chart, #area .fa-area-chart {
+#linegraph .fa-line-chart, #linegraph #wrapper ul:first-of-type i.fa-line-chart+a, 
+#barchart .fa-bar-chart, #barchart #wrapper ul:first-of-type i.fa-bar-chart+a,
+#piechart .fa-pie-chart,  #piechart #wrapper ul:first-of-type i.fa-pie-chart+a,
+#area .fa-area-chart,  #area #wrapper ul:first-of-type i.fa-area-chart+a {
 	color: #008000;
 	}
   
