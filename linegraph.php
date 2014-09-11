@@ -182,8 +182,7 @@ yaxis : {
     title: '<span id="yTitle-opts">Y axis</span>',
     titleAngle: '<span id="yTitleAngle-opts">0</span>',
    },
-mouse : { 
-   track : true,
+    mouse : { track : <span id="mouseTrack-opts">true</span>,
    trackFormatter: function (e){return e.y;},
    trackDecimals: <span id="trackDecimals-opts">0</span>,
    relative: <span id="relative-opts">false</span>,
@@ -387,6 +386,7 @@ function basic_bar(container) {
    yTitle = document.getElementById("yTitle").value,
    yTitleAngle = parseFloat(document.getElementById("yTitleAngle").value),
 
+    mouseTrack = document.getElementById("mouseTrack").value,
    trackDecimals = parseFloat(document.getElementById("trackDecimals").value),
    relative = document.getElementById("relative").value,
    mousePosition = document.getElementById("mousePosition").value,
@@ -424,6 +424,7 @@ for (i=1;i<7;i++) {
     d3.push([j, j*3 - 5])
   }
 
+	mouseTrack = mouseTrack==="false" ? false : true;
 	HtmlText = HtmlText==="false" ? false : true;
 	verticalLines = verticalLines==="false" ? false : true;
 	horizontalLines = horizontalLines==="false" ? false : true;
@@ -484,8 +485,7 @@ lines: {
     stacked: lineStacked
    },
 
-mouse : { 
-   track : true,
+    mouse : { track : mouseTrack,
    trackFormatter: function (e){return e.y},
    trackDecimals: trackDecimals,
    relative: relative,
