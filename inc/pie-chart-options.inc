@@ -16,7 +16,7 @@
 </select>
 <br>
 
-<label for="fillOpacity">fillOpacity: </label><input type="text" value="0.8" id="fillOpacity" size="3" /><br>
+<label for="pieFillOpacity">fillOpacity: </label><input type="text" value="0.8" id="pieFillOpacity" size="3" /><br>
 
 <label for="lineWidth">lineWidth: </label><input type="text" value="2" id="lineWidth" size="3" /><br>
 
