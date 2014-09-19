@@ -1,12 +1,12 @@
-<? 
+<?php 
 $trackTrue = $mouseTrack ? 'selected="selected"' : '';
 $trackFalse = !$mouseTrack ? 'selected="selected"' : '';
 ?>
 
 <label for="mouseTrack">track: </label>
 <select id="mouseTrack">
-<option value="true" <? echo $trackTrue; ?>>true</option>
-<option value="false" <? echo $trackFalse; ?>>false</option>
+<option value="true" <?php echo $trackTrue; ?>>true</option>
+<option value="false" <?php echo $trackFalse; ?>>false</option>
 </select>
 <br>
 

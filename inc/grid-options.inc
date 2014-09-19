@@ -1,4 +1,4 @@
-<? 
+<?php 
 $gridLinesTrue = $gridLines ? 'selected="selected"' : '';
 $gridLinesFalse = !$gridLines ? 'selected="selected"' : '';
 ?>
@@ -17,15 +17,15 @@ $gridLinesFalse = !$gridLines ? 'selected="selected"' : '';
 
 <label for="verticalLines">verticalLines: </label>
 <select id="verticalLines">
-<option value="true" <? echo $gridLinesTrue; ?>>true</option>
-<option value="false" <? echo $gridLinesFalse; ?>>false</option>
+<option value="true" <?php echo $gridLinesTrue; ?>>true</option>
+<option value="false" <?php echo $gridLinesFalse; ?>>false</option>
 </select>
 <br>
 
 <label for="horizontalLines">horizontalLines: </label>
 <select id="horizontalLines">
-<option value="true" <? echo $gridLinesTrue; ?>>true</option>
-<option value="false" <? echo $gridLinesFalse; ?>>false</option>
+<option value="true" <?php echo $gridLinesTrue; ?>>true</option>
+<option value="false" <?php echo $gridLinesFalse; ?>>false</option>
 </select>
 <br>
 

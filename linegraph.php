@@ -48,7 +48,7 @@ $colorData = csvToArray($colorFeed, ',');
   <body id="linegraph">
 <div id="wrapper" style="width: 720px;">
 
-<? include 'inc/nav.inc'; ?>
+<?php include 'inc/nav.inc'; ?>
 
     <div id="bargraph" style="width: 400px; height: 400px; background-color: #f9f9f9; float: left; border-radius: 8px;"></div>
 
@@ -60,13 +60,13 @@ $colorData = csvToArray($colorFeed, ',');
 General Options
 </legend>
 
-<? include 'inc/general-options.inc'; ?>
+<?php include 'inc/general-options.inc'; ?>
 </fieldset>
 
 <fieldset id="paletteChooser" class="hide">
 <legend>Color Palette Chooser</legend>
 
-<? include 'inc/palette-chooser.php'; ?>
+<?php include 'inc/palette-chooser.php'; ?>
 </fieldset>
 
 <fieldset id="chartOpts" class="hide">
@@ -74,7 +74,7 @@ General Options
 Line Graph Options
 </legend>
 
-<? include 'inc/line-options.inc'; ?>
+<?php include 'inc/line-options.inc'; ?>
 </fieldset>
 
 <fieldset id="xAxisOpts" class="hide">
@@ -82,7 +82,7 @@ Line Graph Options
 X-Axis Options
 </legend>
 
-<? include 'inc/x-axis-options.inc'; ?>
+<?php include 'inc/x-axis-options.inc'; ?>
 </fieldset>
 
 <fieldset id="yAxisOpts" class="hide">
@@ -90,7 +90,7 @@ X-Axis Options
 Y-Axis Options
 </legend>
 
-<? include 'inc/y-axis-options.inc'; ?>
+<?php include 'inc/y-axis-options.inc'; ?>
 </fieldset>
 
 <fieldset id="gridOpts" class="hide">
@@ -98,7 +98,7 @@ Y-Axis Options
 Grid Options
 </legend>
 
-<? include 'inc/grid-options.inc'; ?>
+<?php include 'inc/grid-options.inc'; ?>
 </fieldset>
 
 <fieldset id="mouseOpts" class="hide">
@@ -106,7 +106,7 @@ Grid Options
 Mouse Options
 </legend>
 
-<? include 'inc/mouse-options.inc'; ?>
+<?php include 'inc/mouse-options.inc'; ?>
 </fieldset>
 
 <fieldset id="legendOpts" class="hide">
@@ -114,7 +114,7 @@ Mouse Options
 Legend Options
 </legend>
 
-<? include 'inc/legend-options.inc'; ?>
+<?php include 'inc/legend-options.inc'; ?>
 </fieldset>
 
 <fieldset id="divOpts" class="hide">
@@ -122,7 +122,7 @@ Legend Options
 DIV Options
 </legend>
 
-<? include 'inc/div-options.inc'; ?>
+<?php include 'inc/div-options.inc'; ?>
 </fieldset>
 
 <p class="small">
@@ -136,8 +136,8 @@ DIV Options
 <div id="opts">
 <button name="Create PNG" id="makeImage">Create PNG</button>
 
-title: '<span id="graphTitle-opts"><? echo $graphTitle; ?></span>',
-subtitle: '<span id="graphSubtitle-opts"><? echo $graphSubtitle; ?></span>',
+title: '<span id="graphTitle-opts"><?php echo $graphTitle; ?></span>',
+subtitle: '<span id="graphSubtitle-opts"><?php echo $graphSubtitle; ?></span>',
 shadowSize: <span id="shadowSize-opts">4</span>,
 HtmlText: <span id="HtmlText-opts">false</span>,
 resolution: <span id="resolution-opts">2</span>,
@@ -301,7 +301,7 @@ document.getElementById("paletteChooser").getElementsByTagName('input')[i].check
 
 function handlePalette(e) {
 	var 
-	<? echo $palette; ?>
+	<?php echo $palette; ?>
 	scheme = e.target.value,
 	colors = palette[scheme],
 	textString = "";

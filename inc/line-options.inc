@@ -18,8 +18,8 @@ $lineFillFalse = !$fill ? 'selected="selected"' : '';
 
 <label for="lineFill">fill: </label>
 <select id="lineFill">
-<option value="true" <? echo $lineFillTrue; ?>>true</option>
-<option value="false" <? echo $lineFillFalse; ?>>false</option>
+<option value="true" <?php echo $lineFillTrue; ?>>true</option>
+<option value="false" <?php echo $lineFillFalse; ?>>false</option>
 </select>
 <br>
 
@@ -32,7 +32,7 @@ $lineFillFalse = !$fill ? 'selected="selected"' : '';
 
 <label for="lineFillColor">fillColor: </label><input class="color" type="text" value="null" id="lineFillColor" size="7" /><br>
 
-<label for="lineFillOpacity">fillOpacity: </label><input type="text" value="<? echo $opacity; ?>" id="lineFillOpacity" size="1" /><br>
+<label for="lineFillOpacity">fillOpacity: </label><input type="text" value="<?php echo $opacity; ?>" id="lineFillOpacity" size="1" /><br>
 
 <label for="lineSteps">steps: </label>
 <select id="lineSteps">
