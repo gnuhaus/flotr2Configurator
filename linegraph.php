@@ -180,7 +180,7 @@ yaxis : {
     showMinorLabels: <span id="yShowMinorLabels-opts">false</span>,
     labelsAngle: <span id="yLabelsAngle-opts">0</span>,
     title: '<span id="yTitle-opts">Y axis</span>',
-    titleAngle: '<span id="yTitleAngle-opts">0</span>',
+    titleAngle: '<span id="yTitleAngle-opts">90</span>',
    },
     mouse : { track : <span id="mouseTrack-opts">true</span>,
    trackFormatter: function (e){return e.y;},
