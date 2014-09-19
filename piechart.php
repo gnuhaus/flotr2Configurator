@@ -121,8 +121,8 @@ DIV Options
 <div id="opts">
 <button name="Create PNG" id="makeImage">Create PNG</button>
 
-graphTitle: <span id="graphTitle-opts"><? echo $graphTitle; ?></span>,
-graphSubtitle: <span id="graphSubtitle-opts"><? echo $graphSubtitle; ?></span>,
+graphTitle: '<span id="graphTitle-opts"><? echo $graphTitle; ?></span>',
+graphSubtitle: '<span id="graphSubtitle-opts"><? echo $graphSubtitle; ?></span>',
 shadowSize: <span id="shadowSize-opts">4</span>,
 HtmlText: <span id="HtmlText-opts">false</span>,
 resolution: <span id="resolution-opts">2</span>,
