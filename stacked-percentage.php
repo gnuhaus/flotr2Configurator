@@ -167,13 +167,14 @@ xaxis : {
     labelsAngle: <span id="xLabelsAngle-opts">0</span>,
     title: '<span id="xTitle-opts">X axis</span>',
     titleAngle: '<span id="xTitleAngle-opts">0</span>',
+    mode: 'time'
    },
 yaxis : {
     showLabels: <span id="yShowLabels-opts">true</span>,
     showMinorLabels: <span id="yShowMinorLabels-opts">false</span>,
     labelsAngle: <span id="yLabelsAngle-opts">0</span>,
     title: '<span id="yTitle-opts">Y axis</span>',
-    titleAngle: '<span id="yTitleAngle-opts">0</span>',
+    titleAngle: '<span id="yTitleAngle-opts">90</span>',
    },
 grid: {
    color: '<span id="gridColor-opts">#545454</span>',      
