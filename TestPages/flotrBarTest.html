@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Configurator for Flotr2 Line Graph
+    </title>
+   </head>
+
+<body>
+
+<div id="bargraph" style="width: 400px; height: 400px; background-color: #f9f9f9; float: left; border-radius: 8px;"></div>
+
+    <script type="text/javascript" src="../js/flotr2.js"></script>
+
+    <script type="text/javascript">
+
+var graph;
+
+function basic_bar(container) {
+
+var
+
+    d2012 = [[0.75,1580/169.73],[1.75,2580/169.73],[2.75,4243/169.73],[3.75,3561/169.73],[4.75,1898/169.73],[5.75,889/169.73],[6.75,158/169.73]],
+    d2013 = [[1.2,2049/204.11],[2.2,3137/204.11],[3.2,4253/204.11],[4.2,3862/204.11],[5.2,2829/204.11],[6.2,2179/204.11],[7.2,442/204.11]],
+     i;
+
+
+var markerFormatter = function(obj){
+// return obj.y.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+return ' '+(obj.y).toFixed(0) + '%';
+}
+
+  // Draw the graph
+  graph = Flotr.draw(
+    container,
+    [ {data: d2012, label: '2012'}, 
+      {data: d2013, label: '2013'}
+	],
+// Paste Bar Graph Options between the braces below
+    {
+
+
+    
+    }
+  );
+
+}
+basic_bar(document.getElementById("bargraph"));
+
+</script>
+  </body>
+</html>

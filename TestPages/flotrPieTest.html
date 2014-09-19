@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Configurator for Flotr2 Line Graph
+    </title>
+   </head>
+
+<body>
+
+<div id="bargraph" style="width: 400px; height: 400px; background-color: #f9f9f9; float: left; border-radius: 8px;"></div>
+
+    <script type="text/javascript" src="../js/flotr2.js"></script>
+
+    <script type="text/javascript">
+
+var graph;
+
+function basic_bar(container) {
+
+
+var markerFormatter = function(obj){
+// return obj.y.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+return ' '+(obj.y).toFixed(0) + '%';
+}
+
+  // Draw the graph
+  graph = Flotr.draw(
+    container,
+    [ { data : [[0,561]], label : 'Spanish' },{ data : [[0,397]], label : 'Polish' },{ data : [[0,341]], label : 'Japanese' },{ data : [[0,58]], label : 'Portuguese' },{ data : [[0,47]], label : 'Slovak' },{ data : [[0,163]], label : 'Other' }
+	],
+// Paste Pie Chart Options between the braces below
+    {
+
+
+    
+    }
+  );
+
+}
+basic_bar(document.getElementById("bargraph"));
+
+</script>
+  </body>
+</html>
