@@ -176,7 +176,7 @@ colors: [<span id="colors-opts">'#482003', '#485a61', '#cb3500',
    fillOpacity: <span id="fillOpacity-opts">0.8</span>
     },
     legend : {
-      show: '<span id="legendShow-opts">true</span>',
+      show: <span id="legendShow-opts">true</span>,
       position: '<span id="position-opts">nw</span>',
       labelBoxBorderColor: '<span id="labelBoxBorderColor-opts">#cccccc</span>',
       labelBoxWidth: <span id="labelBoxWidth-opts">14</span>,
